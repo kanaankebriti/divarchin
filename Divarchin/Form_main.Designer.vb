@@ -223,19 +223,22 @@ Partial Class Form_main_window
         Me.description = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ImageList_icons = New System.Windows.Forms.ImageList(Me.components)
         Me.ToolTip_all_info = New System.Windows.Forms.ToolTip(Me.components)
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.ToolStripMenuItem_about = New System.Windows.Forms.ToolStripMenuItem()
         Me.SplitContainer_main_window.Panel1.SuspendLayout()
         Me.SplitContainer_main_window.Panel2.SuspendLayout()
         Me.SplitContainer_main_window.SuspendLayout()
         Me.GroupBox_search_settings.SuspendLayout()
         Me.GroupBox_navigate.SuspendLayout()
         CType(Me.DataGridView_result, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'SplitContainer_main_window
         '
         Me.SplitContainer_main_window.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.SplitContainer_main_window.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.SplitContainer_main_window.Location = New System.Drawing.Point(0, 0)
+        Me.SplitContainer_main_window.Location = New System.Drawing.Point(0, 30)
         Me.SplitContainer_main_window.Name = "SplitContainer_main_window"
         '
         'SplitContainer_main_window.Panel1
@@ -249,7 +252,7 @@ Partial Class Form_main_window
         Me.SplitContainer_main_window.Panel2.Controls.Add(Me.GroupBox_navigate)
         Me.SplitContainer_main_window.Panel2.Controls.Add(Me.DataGridView_result)
         Me.SplitContainer_main_window.Panel2.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.SplitContainer_main_window.Size = New System.Drawing.Size(800, 450)
+        Me.SplitContainer_main_window.Size = New System.Drawing.Size(800, 420)
         Me.SplitContainer_main_window.SplitterDistance = 266
         Me.SplitContainer_main_window.TabIndex = 0
         '
@@ -257,7 +260,7 @@ Partial Class Form_main_window
         '
         Me.Button_search.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button_search.Location = New System.Drawing.Point(9, 383)
+        Me.Button_search.Location = New System.Drawing.Point(9, 353)
         Me.Button_search.Name = "Button_search"
         Me.Button_search.Size = New System.Drawing.Size(244, 54)
         Me.Button_search.TabIndex = 1
@@ -276,7 +279,7 @@ Partial Class Form_main_window
         Me.GroupBox_search_settings.Controls.Add(Me.Label_city)
         Me.GroupBox_search_settings.Location = New System.Drawing.Point(3, 12)
         Me.GroupBox_search_settings.Name = "GroupBox_search_settings"
-        Me.GroupBox_search_settings.Size = New System.Drawing.Size(260, 365)
+        Me.GroupBox_search_settings.Size = New System.Drawing.Size(260, 335)
         Me.GroupBox_search_settings.TabIndex = 0
         Me.GroupBox_search_settings.TabStop = False
         Me.GroupBox_search_settings.Text = "تنظیمات جستجو"
@@ -677,7 +680,7 @@ Partial Class Form_main_window
         TreeNode182.Text = "استخدام و کاریابی"
         Me.TreeView_categories.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode1, TreeNode24, TreeNode33, TreeNode55, TreeNode67, TreeNode90, TreeNode106, TreeNode150, TreeNode160, TreeNode169, TreeNode182})
         Me.TreeView_categories.RightToLeftLayout = True
-        Me.TreeView_categories.Size = New System.Drawing.Size(244, 246)
+        Me.TreeView_categories.Size = New System.Drawing.Size(244, 216)
         Me.TreeView_categories.TabIndex = 4
         '
         'Label_search_exp
@@ -792,7 +795,7 @@ Partial Class Form_main_window
         Me.DataGridView_result.RowHeadersVisible = False
         Me.DataGridView_result.RowHeadersWidth = 51
         Me.DataGridView_result.RowTemplate.Height = 24
-        Me.DataGridView_result.Size = New System.Drawing.Size(522, 320)
+        Me.DataGridView_result.Size = New System.Drawing.Size(522, 290)
         Me.DataGridView_result.TabIndex = 1
         '
         'title
@@ -817,7 +820,7 @@ Partial Class Form_main_window
         Me.ImageList_icons.TransparentColor = System.Drawing.Color.Transparent
         Me.ImageList_icons.Images.SetKeyName(0, "flaticon_circumference_390933.ico")
         Me.ImageList_icons.Images.SetKeyName(1, "flaticon_brickwall_845059.ico")
-        Me.ImageList_icons.Images.SetKeyName(2, "flaticon_home_1946490.ico")
+        Me.ImageList_icons.Images.SetKeyName(2, "flaticon_home_1946488.ico")
         Me.ImageList_icons.Images.SetKeyName(3, "flaticon_car_633596.ico")
         Me.ImageList_icons.Images.SetKeyName(4, "flaticon_smartphone_244210.ico")
         Me.ImageList_icons.Images.SetKeyName(5, "icons8-lamp-64.ico")
@@ -828,13 +831,31 @@ Partial Class Form_main_window
         Me.ImageList_icons.Images.SetKeyName(10, "flaticon_manufacture_1433114.ico")
         Me.ImageList_icons.Images.SetKeyName(11, "flaticon_job-search_4150729.ico")
         '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem_about})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(800, 30)
+        Me.MenuStrip1.TabIndex = 1
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'ToolStripMenuItem_about
+        '
+        Me.ToolStripMenuItem_about.Name = "ToolStripMenuItem_about"
+        Me.ToolStripMenuItem_about.Size = New System.Drawing.Size(118, 26)
+        Me.ToolStripMenuItem_about.Text = "درباره دیوارچین"
+        '
         'Form_main_window
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.SplitContainer_main_window)
+        Me.Controls.Add(Me.MenuStrip1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Form_main_window"
         Me.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.Text = "دیوارچین"
@@ -845,7 +866,10 @@ Partial Class Form_main_window
         Me.GroupBox_search_settings.PerformLayout()
         Me.GroupBox_navigate.ResumeLayout(False)
         CType(Me.DataGridView_result, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -866,4 +890,6 @@ Partial Class Form_main_window
     Friend WithEvents title As DataGridViewTextBoxColumn
     Friend WithEvents description As DataGridViewTextBoxColumn
     Friend WithEvents ToolTip_all_info As ToolTip
+    Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents ToolStripMenuItem_about As ToolStripMenuItem
 End Class

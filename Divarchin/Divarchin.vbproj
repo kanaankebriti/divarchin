@@ -49,6 +49,9 @@
   <PropertyGroup>
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>flaticon_wall_2948783.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net35\Newtonsoft.Json.dll</HintPath>
@@ -76,6 +79,12 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutBox_divarchin.Designer.vb">
+      <DependentUpon>AboutBox_divarchin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutBox_divarchin.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form_main.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +110,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AboutBox_divarchin.resx">
+      <DependentUpon>AboutBox_divarchin.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_main.fa.resx">
       <DependentUpon>Form_main.vb</DependentUpon>
     </EmbeddedResource>
@@ -127,6 +139,9 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="flaticon_wall_2948783.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

@@ -321,4 +321,8 @@
 
         Return city
     End Function
+
+    Private Sub ToolStripMenuItem_about_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem_about.Click
+        AboutBox_divarchin.Show()
+    End Sub
 End Class
