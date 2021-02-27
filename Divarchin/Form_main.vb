@@ -6,6 +6,11 @@
     Private search_string As String = "&q="
     Private current_page_number As UInt16
 
+    REM# on click about
+    Private Sub ToolStripMenuItem_about_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem_about.Click
+        AboutBox_divarchin.Show()
+    End Sub
+
     REM# on click Button_refresh
     Private Sub Button_refresh_Click(sender As Object, e As EventArgs) Handles Button_refresh.Click
         REM# prevent crash if nothing has been set
@@ -193,6 +198,24 @@
                 city = "absard"
             Case "آبعلی"
                 city = "abali"
+            Case "آذرشهر"
+                city = "azarshahr"
+            Case "آران و بیدگل"
+                city = "aran-va-bidgol"
+            Case "آزادشهر"
+                city = "azadshahr-golestan"
+            Case "آسارا"
+                city = "asara"
+            Case "آستارا"
+                city = "astara"
+            Case "آستانه اشرفیه"
+                city = "astaneh-ashrafiyeh"
+            Case "آشخانه"
+                city = "ashkhaneh"
+            Case "آق قلا"
+                city = "aq-qala"
+            Case "آمل"
+                city = "amol"
 
             REM# ا
             Case "ابریشم"
@@ -201,14 +224,42 @@
             REM# ب
             Case "بابل"
                 city = "babol"
+            Case "بابلسر"
+                city = "babolsar"
+            Case "باقرشهر"
+                city = "baghershahr"
+            Case "بانه"
+                city = "baneh"
+            Case "بجنورد"
+                city = "bojnurd"
+            Case "برازجان"
+                city = "borazjan"
+            Case "بردسکن"
+                city = "bardaskan"
+            Case "بروجرد"
+                city = "borujerd"
+            Case "بروجن"
+                city = "boroujen"
 
             REM# پ
             Case "پارس‌آباد"
                 city = "parsabad"
+            Case "پل سفید"
+                city = "polsefid"
+            Case "پیرانشهر"
+                city = "piranshahr"
+            Case "پیشوا"
+                city = "pishva"
 
             REM# ت
             Case "تاکستان"
                 city = "takestan"
+            Case "تالش"
+                city = "talesh"
+            Case "تایباد"
+                city = "taybad"
+            Case "تربت جام"
+                city = "torbat-jam"
 
             REM# ج
             Case "جوادآباد"
@@ -225,6 +276,22 @@
             REM# خ
             Case "خرم‌آباد"
                 city = "khorramabad"
+            Case "خرمدره"
+                city = "khorramdarreh"
+            Case "خرمشهر"
+                city = "khorramshahr"
+            Case "خشکبیجار"
+                city = "khoshkbijar"
+            Case "خلخال"
+                city = "khalkhal"
+            Case "خمین"
+                city = "khomein"
+            Case "خواف"
+                city = "khaf"
+            Case "خوانسار"
+                city = "khansar"
+            Case "خوی"
+                city = "khoy"
 
             REM# د
             Case "داراب"
@@ -249,58 +316,214 @@
             REM# ر
             Case "رامسر"
                 city = "ramsar"
+            Case "رامهرمز"
+                city = "ramhormoz"
+            Case "رضوانشهر"
+                city = "rezvanshahr"
+            Case "رفسنجان"
+                city = "rafsanjan"
+            Case "رودسر"
+                city = "rudsar"
+            Case "رویان"
+                city = "royan"
 
             REM# ز
             Case "زابل"
                 city = "zabol"
+            Case "زاهدان"
+                city = "zahedan"
+            Case "زرند"
+                city = "zarand"
+            Case "زنجان"
+                city = "zanjan"
+            Case "زیباکنار"
+                city = "zibakenar"
 
             REM# س
             Case "ساری"
                 city = "sari"
+            Case "ساوه"
+                city = "saveh"
+            Case "سبزوار"
+                city = "sabzevar"
+            Case "سراب"
+                city = "sarab"
+            Case "سراوان-سیستان و بلوچستان"
+                city = "saravan"
+            Case "سرپل ذهاب"
+                city = "sarpol-zahab"
+            Case "سرخرود"
+                city = "sorkhrood"
+            Case "سردشت"
+                city = "sardasht"
+            Case "سقز"
+                city = "saqqez"
+            Case "سلماس"
+                city = "salmas"
+            Case "سلمان‌شهر"
+                city = "salman-shahr"
+            Case "سمنان"
+                city = "semnan"
+            Case "سمیرم"
+                city = "semirom"
+            Case "سنقر"
+                city = "sonqor"
+            Case "سنندج"
+                city = "sanandaj"
+            Case "سوسنگرد"
+                city = "susangerd"
+            Case "سهند"
+                city = "sahand"
+            Case "سیاهکل"
+                city = "siahkal"
+            Case "سیرجان"
+                city = "sirjan"
 
             REM# ش
             Case "شاهدشهر"
                 city = "shahedshahr"
+            Case "شاهرود"
+                city = "shahroud"
+            Case "شاهین دژ"
+                city = "shahin-dej"
+            Case "شمشک"
+                city = "shemshak"
+            Case "شوش"
+                city = "shush"
+            Case "شوشتر"
+                city = "shooshtar"
+            Case "شهرکرد"
+                city = "shahrekord"
+            Case "شیروان"
+                city = "shirvan"
 
             REM# ص
             Case "صباشهر"
                 city = "sabashahr"
+            Case "صدرا-فارس"
+                city = "sadra"
+            Case "صفادشت"
+                city = "safadasht-industrial-city"
+            Case "صومعه‌سرا"
+                city = "someh-sara"
 
             REM# ط
             Case "طالقان"
                 city = "taleqan"
+            Case "طبس"
+                city = "tabas"
 
-            REM# ط
+            REM# ع
             Case "عباس‌آباد"
                 city = "abbasabad-mazandaran"
+            Case "علی‌آباد کتول"
+                city = "aliabad-katul"
 
             REM# ف
             Case "فرخ‌شهر"
                 city = "farrokhshahr"
+            Case "فردوس"
+                city = "ferdows"
+            Case "فردوسیه"
+                city = "ferdosiye"
+            Case "فریدون‌کنار"
+                city = "fereydunkenar"
+            Case "فلاورجان"
+                city = "falavarjan"
+            Case "فومن"
+                city = "fuman"
+            Case "فیروزآباد"
+                city = "firuzabad"
 
             REM# ق
             Case "قائم‌شهر"
                 city = "qaemshahr"
+            Case "قاسم‌آباد (خواف)"
+                city = "qasemabad-khaf"
+            Case "قاين"
+                city = "ghayen"
+            Case "قروه"
+                city = "qorveh"
+            Case "قزوین"
+                city = "qazvin"
+            Case "قشم"
+                city = "qeshm"
+            Case "قیدار"
+                city = "qeydar"
 
             REM# ک
             Case "کاشان"
                 city = "kashan"
+            Case "کردکوی"
+                city = "kordkuy"
+            Case "کرمان"
+                city = "kerman"
+            Case "کرمانشاه"
+                city = "kermanshah"
 
             REM# گ
             Case "گرگان"
                 city = "gorgan"
+            Case "گرمدره"
+                city = "garmdareh"
+            Case "گرمسار"
+                city = "garmsar"
+            Case "گلپایگان"
+                city = "golpayegan"
+            Case "گلستان"
+                city = "golestan-baharestan"
+            Case "گمیشان"
+                city = "gomishan"
+            Case "گناباد"
+                city = "gonabad"
+            Case "گنبد کاووس"
+                city = "gonbad-kavus"
 
             REM# ل
             Case "لار"
                 city = "lar"
+            Case "لامرد"
+                city = "lamerd"
+            Case "لاهیجان"
+                city = "lahijan"
+            Case "لردگان"
+                city = "lordegan"
+            Case "لشت نشا"
+                city = "lashtenesha"
+            Case "لنگرود"
+                city = "langarud"
 
             REM# م
             Case "ماسال"
                 city = "masal"
+            Case "ماکو"
+                city = "maku"
+            Case "محلات"
+                city = "mahalat"
 
             REM# ن
             Case "نجف‌آباد"
                 city = "najafabad"
+            Case "نسیم‌شهر"
+                city = "nasimshahr"
+            Case "نظرآباد"
+                city = "nazarabad"
+            Case "نقده"
+                city = "naqadeh"
+            Case "نکا"
+                city = "neka"
+            Case "نور"
+                city = "nur"
+            Case "نورآباد"
+                city = "nurabad"
+            Case "نوشهر"
+                city = "nowshahr"
+            Case "نهاوند"
+                city = "nahavand"
+            Case "نی‌ریز"
+                city = "neyriz"
+            Case "نیشابور"
+                city = "neyshabur"
 
             REM# و
             Case "وحیدیه"
@@ -321,8 +544,4 @@
 
         Return city
     End Function
-
-    Private Sub ToolStripMenuItem_about_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem_about.Click
-        AboutBox_divarchin.Show()
-    End Sub
 End Class

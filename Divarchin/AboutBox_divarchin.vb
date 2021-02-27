@@ -1,5 +1,6 @@
 ﻿Public NotInheritable Class AboutBox_divarchin
     Private repo_url As String = "https://github.com/kanaankebriti/divarchin"
+    Private divarchin_version As String = "نسخهٔ ۱"
 
     Private Sub AboutBox1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         ' Set the title of the form.
@@ -9,9 +10,11 @@
         Else
             ApplicationTitle = System.IO.Path.GetFileNameWithoutExtension(My.Application.Info.AssemblyName)
         End If
-        Me.Text = String.Format("About {0}", ApplicationTitle)
+
+        REM# assign strings to labels
+        Me.Text = String.Format("درباره {0}", ApplicationTitle)
         Me.Label_name_and_licence.Text = My.Application.Info.Description
-        Me.Label_version.Text = String.Format("نسخه {0}", My.Application.Info.Version.ToString)
+        Me.Label_version.Text = divarchin_version
     End Sub
 
     Private Sub Button_close_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button_close.Click
